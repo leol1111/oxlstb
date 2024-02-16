@@ -28,7 +28,206 @@
   --oxl-color-text-caution: #4F4700;
   --oxl-color-text-warning: #5E4200;
   --oxl-color-text-critical: #8E1F0B;
-}
+
+  //Font
+  --oxl-font-family-sans: "'Inter', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif";
+  --oxl-font-family-mono: "ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace";
+  --oxl-font-size-275: 0.6875rem;
+  --oxl-font-size-300: 	0.75rem;
+  --oxl-font-size-325: 	0.8125rem;
+  --oxl-font-size-350: 0.875rem;
+  --oxl-font-size-400: 1rem;
+  --oxl-font-size-450: 1.125rem;
+  --oxl-font-size-500: 1.25rem;
+  --oxl-font-size-550: 1.375rem;
+  --oxl-font-size-600: 1.5rem;
+  --oxl-font-size-750: 1.875rem;
+  --oxl-font-size-800: 2rem;
+  --oxl-font-size-900: 2.25rem;
+  --oxl-font-size-1000: 2.5rem;
+
+  --oxl-font-weight-regular: 450;
+  --oxl-font-weight-medium: 550;
+  --oxl-font-weight-semibold: 650;
+  --oxl-font-weight-bold: 700;
+
+  --oxl-font-letter-spacing-densest: -0.54px;
+  --oxl-font-letter-spacing-denser: -0.3px;
+  --oxl-font-letter-spacing-dense: -0.2px;
+  --oxl-font-letter-spacing-normal: 0px;
+
+  --oxl-font-line-height-300: 0.75rem;
+  --oxl-font-line-height-400: 1rem;
+  --oxl-font-line-height-500: 1.25rem;
+  --oxl-font-line-height-600: 1.5rem;
+  --oxl-font-line-height-700: 1.75rem;
+  --oxl-font-line-height-800: 2rem;
+  --oxl-font-line-height-1000: 2.5rem;
+  --oxl-font-line-height-1200: 3rem;
+
+  //Border 
+  --oxl-border-radius-0: 0;
+  --oxl-border-radius-050: 0.125rem;
+  --oxl-border-radius-100: 0.25rem;
+  --oxl-border-radius-150: 0.375rem;
+  --oxl-border-radius-200: 0.5rem;
+  --oxl-border-radius-300: 0.75rem;
+  --oxl-border-radius-400: 1rem;
+  --oxl-border-radius-500: 1.25;
+  --oxl-border-radius-750: 1.875;
+  --oxl-border-radius-full: 100rem;
+
+  --oxl-border-width-0: 0;
+  --oxl-border-width-0165: 0.04125rem;
+  --oxl-border-width-025: 0.0625rem;
+  --oxl-border-width-050: 0.125rem;
+  --oxl-border-width-100: 0.25rem;
+
+  //Breakpoint
+  --oxl-breakpoints-xs: 0px;
+  --oxl-breakpoints-sm: 490px;
+  --oxl-breakpoints-md: 768px;
+  --oxl-breakpoints-lg: 1040px;
+  --oxl-breakpoints-xl: 1140px;
+
+  //Height
+  --oxl-height-0: 0;
+  --oxl-height-025: 0.0625rem;
+  --oxl-height-050: 0.125rem;
+  --oxl-height-100: 0.25rem;
+  --oxl-height-150: 0.375rem;
+  --oxl-height-200: 0.5rem;
+  --oxl-height-300: 0.75rem;
+  --oxl-height-400: 1rem;
+  --oxl-height-500: 1.25;
+  --oxl-height-600: 1.5rem;
+  --oxl-height-700: 1.75rem;
+  --oxl-height-800: 2rem;
+  --oxl-height-900: 2.25rem;
+  --oxl-height-1000: 2.5rem;
+  --oxl-height-1200: 3rem;
+  --oxl-height-1600: 4rem;
+  --oxl-height-2000: 5rem;
+  --oxl-height-2400: 6rem;
+  --oxl-height-2800: 7rem;
+  --oxl-height-3200: 8rem;
+
+  //Motion
+  --oxl-motion-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --oxl-motion-ease-in: cubic-bezier(0.42, 0, 1, 1);
+  --oxl-motion-ease-out: cubic-bezier(0.19, 0.91, 0.38, 1);
+  --oxl-motion-ease-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --oxl-motion-linear: cubic-bezier(0, 0, 1, 1);
+  --oxl-motion-duration-0: 0ms;
+  --oxl-motion-duration-50: 50ms;
+  --oxl-motion-duration-100: 100ms;
+  --oxl-motion-duration-150: 150ms;
+  --oxl-motion-duration-200: 200ms;
+  --oxl-motion-duration-250: 250ms;
+  --oxl-motion-duration-300: 300ms;
+  --oxl-motion-duration-350: 350ms;
+  --oxl-motion-duration-400: 400ms;
+  --oxl-motion-duration-450: 450ms;
+  --oxl-motion-duration-500: 500ms;
+  --oxl-motion-duration-5000: 5000ms;
+  --oxl-motion-keyframes-bounce: { from, 65%, 85% { transform: scale(1) } 75% { transform: scale(0.85) } 82.5% { transform: scale(1.05) } };
+  --oxl-motion-keyframes-fade-in: { to { opacity: 1 } };
+  --oxl-motion-keyframes-pulse: { from, 75% { transform: scale(0.85); opacity: 1; } to { transform: scale(2.5); opacity: 0; } };
+  --oxl-motion-keyframes-spin: { to { transform: rotate(1turn) } };
+  --oxl-motion-keyframes-appear-above: { from { transform: translateY(var(--oxl-space-100)); opacity: 0; } to { transform: none; opacity: 1; } };
+  --oxl-motion-keyframes-appear-below: { from { transform: translateY(calc(var(--oxl-space-100) * -1)); opacity: 0; } to { transform: none; opacity: 1; } };
+
+
+  //Shadow
+  --oxl-shadow-0: none;
+  --oxl-shadow-100: 0px 1px 0px 0px rgba(26, 26, 26, 0.07);
+  --oxl-shadow-200: 0px 3px 1px -1px rgba(26, 26, 26, 0.07);
+  --oxl-shadow-300: 0px 4px 6px -2px rgba(26, 26, 26, 0.20);
+  --oxl-shadow-400: 0px 8px 16px -4px rgba(26, 26, 26, 0.22);
+  --oxl-shadow-500: 0px 12px 20px -8px rgba(26, 26, 26, 0.24);
+  --oxl-shadow-600: 0px 20px 20px -8px rgba(26, 26, 26, 0.28);
+  --oxl-shadow-bevel-100: 1px 0px 0px 0px rgba(0, 0, 0, 0.13) inset, -1px 0px 0px 0px rgba(0, 0, 0, 0.13) inset, 0px -1px 0px 0px rgba(0, 0, 0, 0.17) inset, 0px 1px 0px 0px rgba(204, 204, 204, 0.5) inset;
+  --oxl-shadow-inset-100: 0px 1px 2px 0px rgba(26, 26, 26, 0.15) inset, 0px 1px 1px 0px rgba(26, 26, 26, 0.15) inset;
+  --oxl-shadow-inset-200: 0px 2px 1px 0px rgba(26, 26, 26, 0.20) inset, 1px 0px 1px 0px rgba(26, 26, 26, 0.12) inset, -1px 0px 1px 0px rgba(26, 26, 26, 0.12) inset;
+  --oxl-shadow-button: 0px -1px 0px 0px #b5b5b5 inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset, 0px 0.5px 0px 1.5px #FFF inset;
+  --oxl-shadow-button-hover: 0px 1px 0px 0px #EBEBEB inset, -1px 0px 0px 0px #EBEBEB inset, 1px 0px 0px 0px #EBEBEB inset, 0px -1px 0px 0px #CCC inset;
+  --oxl-shadow-button-inset: -1px 0px 1px 0px rgba(26, 26, 26, 0.122) inset, 1px 0px 1px 0px rgba(26, 26, 26, 0.122) inset, 0px 2px 1px 0px rgba(26, 26, 26, 0.2) inset;
+  --oxl-shadow-button-primary: 0px -1px 0px 1px rgba(0, 0, 0, 0.8) inset, 0px 0px 0px 1px rgba(48, 48, 48, 1) inset, 0px 0.5px 0px 1.5px rgba(255, 255, 255, 0.25) inset;;
+  --oxl-shadow-button-primary-hover: 0px 1px 0px 0px rgba(255, 255, 255, 0.24) inset, 1px 0px 0px 0px rgba(255, 255, 255, 0.20) inset, -1px 0px 0px 0px rgba(255, 255, 255, 0.20) inset, 0px -1px 0px 0px #000 inset, 0px -1px 0px 1px #1A1A1A;
+  --oxl-shadow-button-primary-inset: 0px 3px 0px 0px rgb(0, 0, 0) inset;
+  --oxl-shadow-button-primary-critical: 0px -1px 0px 1px rgba(142, 31, 11, 0.8) inset, 0px 0px 0px 1px rgba(181, 38, 11, 0.8) inset, 0px 0.5px 0px 1.5px rgba(255, 255, 255, 0.349) inset;
+  --oxl-shadow-button-primary-critical-hover: 0px 1px 0px 0px rgba(255, 255, 255, 0.48) inset, 1px 0px 0px 0px rgba(255, 255, 255, 0.20) inset, -1px 0px 0px 0px rgba(255, 255, 255, 0.20) inset, 0px -1.5px 0px 0px rgba(0, 0, 0, 0.25) inset;
+  --oxl-shadow-button-primary-critical-inset: -1px 0px 1px 0px rgba(0, 0, 0, 0.2) inset, 1px 0px 1px 0px rgba(0, 0, 0, 0.2) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.6) inset;
+  --oxl-shadow-button-primary-success: 0px -1px 0px 1px rgba(12, 81, 50, 0.8) inset, 0px 0px 0px 1px rgba(19, 111, 69, 0.8) inset, 0px 0.5px 0px 1.5px rgba(255, 255, 255, 0.251) inset;
+  --oxl-shadow-button-primary-success-hover: 0px 1px 0px 0px rgba(255, 255, 255, 0.48) inset, 1px 0px 0px 0px rgba(255, 255, 255, 0.20) inset, -1px 0px 0px 0px rgba(255, 255, 255, 0.20) inset, 0px -1.5px 0px 0px rgba(0, 0, 0, 0.25) inset;
+  --oxl-shadow-button-primary-success-inset: -1px 0px 1px 0px rgba(0, 0, 0, 0.2) inset, 1px 0px 1px 0px rgba(0, 0, 0, 0.2) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.6) inset;
+  --oxl-shadow-border-inset: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
+
+
+  //Space
+  --oxl-space-0: 0;
+  --oxl-space-025: 1px;
+  --oxl-space-050: 2px;
+  --oxl-space-100: 4px;
+  --oxl-space-150: 6px;
+  --oxl-space-200: 8px;
+  --oxl-space-300: 12px;
+  --oxl-space-400: 16px;
+  --oxl-space-500: 20px;
+  --oxl-space-600: 24px;
+  --oxl-space-800: 32px;
+  --oxl-space-1000: 40px;
+  --oxl-space-1200: 48px;
+  --oxl-space-1600: 64px;
+  --oxl-space-2000: 80px;
+  --oxl-space-2400: 96px;
+  --oxl-space-2800: 112px;
+  --oxl-space-3200: 128px;
+  --oxl-space-button-group-gap: 8px;
+  --oxl-space-card-gap: 16px;
+  --oxl-space-card-padding: 16px;
+  --oxl-space-table-cell-padding: 6px;
+
+
+  //Width
+  --oxl-width-0: 0;
+  --oxl-width-025: 1px;
+  --oxl-width-050: 2px;
+  --oxl-width-100: 4px;
+  --oxl-width-150: 6px;
+  --oxl-width-200: 8px;
+  --oxl-width-300: 12px;
+  --oxl-width-400: 16px;
+  --oxl-width-500: 20px;
+  --oxl-width-600: 24px;
+  --oxl-width-700: 28px;
+  --oxl-width-800: 32px;
+  --oxl-width-900: 36px;
+  --oxl-width-1000: 40px;
+  --oxl-width-1200: 48px;
+  --oxl-width-1600: 64px;
+  --oxl-width-2000: 80px;
+  --oxl-width-2400: 96px;
+  --oxl-width-2800: 112px;
+  --oxl-width-3200: 128px;
+
+  //Z-index
+  --oxl-z-index-0: auto;
+  --oxl-z-index-1: 100;
+  --oxl-z-index-2: 400;
+  --oxl-z-index-3: 510;
+  --oxl-z-index-4: 512;
+  --oxl-z-index-5: 513;
+  --oxl-z-index-6: 514;
+  --oxl-z-index-7: 515;
+  --oxl-z-index-8: 516;
+  --oxl-z-index-9: 517;
+  --oxl-z-index-10: 518;
+  --oxl-z-index-11: 519;
+  --oxl-z-index-12: 520;
+
+
+} 
 
 body {
     font-family: 'Inter', sans-serif;
