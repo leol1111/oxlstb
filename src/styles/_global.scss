@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+  //Color icon
+  --oxl-color-icon: #4a4a4a;
+  --oxl-color-icon-secondary: #8A8A8A;
+  --oxl-color-icon-caution: #4F4700;
+  --oxl-color-icon-warning: #5E4200;
+  --oxl-color-icon-critical: #8E1F0B;
+  --oxl-color-icon-emphasis: #2C885E;
+  --oxl-color-icon-info: #00527C;
+  --oxl-color-icon-success: #0C5132;
+  --oxl-color-icon-brand: #2C885E;
+  --oxl-color-icon-magic: #7953F6;
+
+  //Text color
+  --oxl-color-text-primary: #303030;
+  --oxl-color-text-secondary: #616161;
+  --oxl-color-text-disabled: #B5B5B5;
+  --oxl-color-text-link: #005BD3;
+  --oxl-color-text-link-hover: #004299;
+  --oxl-color-text-brand: #2C885E;
+  --oxl-color-text-brand-hover: #235443;
+  --oxl-color-text-info: #00527C;
+  --oxl-color-text-success: #0C5132;
+  --oxl-color-text-caution: #4F4700;
+  --oxl-color-text-warning: #5E4200;
+  --oxl-color-text-critical: #8E1F0B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+  }
