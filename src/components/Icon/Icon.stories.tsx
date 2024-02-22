@@ -1,7 +1,7 @@
 
 import type { Meta } from '@storybook/react';
 import { Icon } from './Icon';
-import AddIcon from '../../icons/AddIcon'
+import { PlusIcon } from '@shopify/polaris-icons'; 
 import { Text } from '../Text';
 
 
@@ -14,17 +14,11 @@ const meta: Meta = {
   },
 };
 
-
 export default meta;
 
-interface Icons {
-    [key: string]: any;
-  }
-
-  const icons: Icons = AddIcon;
 
   export function Default() {
-    return <Icon source={AddIcon} />;
+    return <Icon source={PlusIcon} />;
   }
 
   export function Colored() {
@@ -33,71 +27,71 @@ interface Icons {
         <Text as="p" variant="bodyMd" alignment="center">
           Base tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="base" />
+        <Icon source={PlusIcon} tone="base" />
         <Text as="p" variant="bodyMd" alignment="center">
           Subdued tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="subdued" />
+        <Icon source={PlusIcon} tone="subdued" />
         <Text as="p" variant="bodyMd" alignment="center">
           Primary tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="primary" />
+        <Icon source={PlusIcon} tone="primary" />
         <Text as="p" variant="bodyMd" alignment="center">
           Info tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="info" />
+        <Icon source={PlusIcon} tone="info" />
         <Text as="p" variant="bodyMd" alignment="center">
           Success tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="success" />
+        <Icon source={PlusIcon} tone="success" />
         <Text as="p" variant="bodyMd" alignment="center">
           Caution tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="caution" />
+        <Icon source={PlusIcon} tone="caution" />
         <Text as="p" variant="bodyMd" alignment="center">
           Warning tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="warning" />
+        <Icon source={PlusIcon} tone="warning" />
         <Text as="p" variant="bodyMd" alignment="center">
           Critical tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="critical" />
+        <Icon source={PlusIcon} tone="critical" />
         <Text as="p" variant="bodyMd" alignment="center">
           Emphasis tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="emphasis" />
+        <Icon source={PlusIcon} tone="emphasis" />
         <Text as="p" variant="bodyMd" alignment="center">
           Magic tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="magic" />
+        <Icon source={PlusIcon} tone="magic" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Primary tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textPrimary" />
+        <Icon source={PlusIcon} tone="textPrimary" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Caution tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textCaution" />
+        <Icon source={PlusIcon} tone="textCaution" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Warning tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textWarning" />
+        <Icon source={PlusIcon} tone="textWarning" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Critical tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textCritical" />
+        <Icon source={PlusIcon} tone="textCritical" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Info tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textInfo" />
+        <Icon source={PlusIcon} tone="textInfo" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Success tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textSuccess" />
+        <Icon source={PlusIcon} tone="textSuccess" />
         <Text as="p" variant="bodyMd" alignment="center">
           Text Magic tone
         </Text>
-        <Icon source={icons.PlusCircleIcon} tone="textMagic" />
+        <Icon source={PlusIcon} tone="textMagic" />
       </div>
     );
   }

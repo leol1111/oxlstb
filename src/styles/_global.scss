@@ -14,6 +14,7 @@
   --oxl-color-icon-success: #0C5132;
   --oxl-color-icon-brand: #2C885E;
   --oxl-color-icon-magic: #7953F6;
+  --oxl-color-icon_disabled: #4a4a4a30;
 
   //Text color
   --oxl-color-text-primary: #303030;
@@ -28,6 +29,11 @@
   --oxl-color-text-caution: #4F4700;
   --oxl-color-text-warning: #5E4200;
   --oxl-color-text-critical: #8E1F0B;
+
+  //Background Color
+  --oxl-color-bg-fill-brand: #2C885E;
+  --oxl-color-bg-fill-brand-hover: #136F45;
+  --oxl-color-bg-fill-brand-active: #0C5132;
 
   //Font
   --oxl-font-family-sans: "'Inter', -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif";
@@ -163,6 +169,9 @@
   --oxl-shadow-button-primary-success-inset: -1px 0px 1px 0px rgba(0, 0, 0, 0.2) inset, 1px 0px 1px 0px rgba(0, 0, 0, 0.2) inset, 0px 2px 0px 0px rgba(0, 0, 0, 0.6) inset;
   --oxl-shadow-border-inset: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
 
+
+  --oxl-button-box-shadow: inset  0px -2px 0px 0px rgba(0,0,0,0.2);
+  --oxl-button-box-shadow_active:  0px 0px 0px 0px rgba(0,0,0,0.2);
 
   //Space
   --oxl-space-0: 0;

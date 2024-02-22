@@ -16,7 +16,7 @@ export default meta;
 
 
 export const Variants = () => (
-    <div className='grid grid-cols-4 gap-4'>
+    <div>
       <Text as="h2" variant="heading3xl">
         Text with Heading3xl variant
       </Text>

@@ -37,25 +37,8 @@ export interface IconProps {
 }
 
 export function Icon({source, tone, accessibilityLabel}: IconProps) {
-  let sourceType: 'function' | 'placeholder' | 'external';
-  if (typeof source === 'function') {
-    sourceType = 'function';
-  } else if (source === 'placeholder') {
-    sourceType = 'placeholder';
-  } else {
-    sourceType = 'external';
-  }
 
-  if (
-    tone &&
-    sourceType === 'external' &&
-    process.env.NODE_ENV === 'development'
-  ) {
-    // eslint-disable-next-line no-console
-    console.warn(
-      'Recoloring external SVGs is not supported. Set the intended color on your SVG instead.',
-    );
-  }
+
 
   const className = classNames(
     styles.Icon,
@@ -63,24 +46,11 @@ export function Icon({source, tone, accessibilityLabel}: IconProps) {
   );
 
   const SourceComponent = source;
-  const contentMarkup = {
-    function: (
-      <SourceComponent
-        className={styles.Svg}
-        focusable="false"
-        aria-hidden="true"
-      />
-    ),
-    placeholder: <div className={styles.Placeholder} />,
-    external: (
-      <img
-        className={styles.Img}
-        src={`data:image/svg+xml;utf8,${source}`}
-        alt=""
-        aria-hidden="true"
-      />
-    ),
-  };
+  const contentMarkup = <SourceComponent
+  className={styles.Svg}
+  focusable="false"
+  aria-hidden="true"
+/>
 
   return (
     <span className={className}>
@@ -89,7 +59,7 @@ export function Icon({source, tone, accessibilityLabel}: IconProps) {
           {accessibilityLabel}
         </Text>
       )}
-      {contentMarkup[sourceType]}
+      {contentMarkup}
     </span>
   );
 }

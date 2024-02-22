@@ -1,0 +1,34 @@
+@import '../../styles/common';
+
+$small-size: 20px;
+$large-size: 44px;
+
+
+@mixin spinnerSize($size) {
+  height: $size;
+  width: $size;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+.Spinner svg {
+  animation: spin var(--oxl-motion-duration-500) linear
+    infinite;
+  fill: var(--oxl-color-bg-fill-brand);
+}
+
+.sizeSmall svg {
+  @include spinnerSize($small-size);
+}
+
+.sizeLarge svg {
+  @include spinnerSize($large-size);
+}
