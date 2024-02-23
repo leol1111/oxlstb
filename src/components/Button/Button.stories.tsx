@@ -46,7 +46,7 @@ export function All() {
 }
 export function Default() {
     return (
-      <div>
+      <div style={{ display: 'flex', gap: '16px' , margin: '12px 0'}}>
         
             <Button>Label</Button>
             <Button disabled>Label</Button>

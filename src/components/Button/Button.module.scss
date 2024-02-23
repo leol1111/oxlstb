@@ -31,11 +31,11 @@
     padding: var(--pc-button-padding-block) var(--pc-button-padding-inline);
     background: var(--button-bg);
     border: none;
-    border-radius: var(--oxl-border-radius-100);
+    border-radius: var(--oxl-border-radius-200);
     box-shadow: var(--oxl-button-box-shadow);
     color: var(--button-color);
   
-    font-size: var(--oxl-font-size-350);
+    font-size: var(--oxl-font-size-325);
     font-weight: var(--oxl-font-weight-semibold);
     line-height: var(--oxl-font-line-height-500);
   
@@ -415,3 +415,6 @@
   }
   
   /* stylelint-enable -- selector-max-combinators */
+
+
+  

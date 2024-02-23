@@ -169,7 +169,8 @@
   --oxl-shadow-border-inset: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
 
 
-  --oxl-button-box-shadow: inset  0px -2px 0px 0px rgba(0,0,0,0.2);
+  // --oxl-button-box-shadow: inset  0px -2px 0px 0px rgba(0,0,0,0.2);
+  --oxl-button-box-shadow: 0rem -.0625rem 0rem 0rem #b5b5b5 inset, 0rem 0rem 0rem .0625rem rgba(0, 0, 0, .1) inset, 0rem .03125rem 0rem .09375rem #FFF inset;
   --oxl-button-box-shadow_active:  0px 0px 0px 0px rgba(0,0,0,0.2);
 
   //Space
