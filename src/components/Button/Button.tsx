@@ -19,7 +19,6 @@ interface UnstyledButtonProps extends BaseButton {
   className?: string;
   [key: string]: any;
 }
-
 function UnstyledButton({
   id,
   children,
@@ -48,11 +47,32 @@ function UnstyledButton({
   onTouchStart,
   ...rest
 }: UnstyledButtonProps) {
-  const buttonMarkup = <button {...rest}>{children}</button>;
-
-  return buttonMarkup;
-}
-
+  return (
+    <button 
+      id={id}
+      className={className}
+      disabled={disabled}
+      aria-pressed={pressed}
+      aria-label={accessibilityLabel}
+      role={role}
+      aria-controls={ariaControls}
+      aria-expanded={ariaExpanded}
+      aria-describedby={ariaDescribedBy}
+      aria-checked={ariaChecked}
+      onClick={onClick}
+      onFocus={onFocus}
+      onBlur={onBlur}
+      onKeyDown={onKeyDown}
+      onKeyPress={onKeyPress}
+      onKeyUp={onKeyUp}
+      onMouseEnter={onMouseEnter}
+      onTouchStart={onTouchStart}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
+}     
 
 
 
@@ -97,23 +117,21 @@ export function Button({
 }: ButtonProps) {
   const isDisabled = disabled || loading;
 
-  // const className = classNames(
-  //   styles.Button,
-  //   styles.pressable,
-  //   styles[variationName("variant", variant)],
-  //   styles[variationName("size", size)],
-  //   styles[variationName("textAlign", textAlign)],
-  //   fullWidth && styles.fullWidth,
-  //   disclosure && styles.disclosure,
-  //   icon && children && styles.iconWithText,
-  //   icon && children == null && styles.iconOnly,
-  //   isDisabled && styles.disabled,
-  //   loading && styles.loading,
-  //   pressed && !disabled && !url && styles.pressed,
-  //   tone && styles[variationName("tone", tone)]
-  // );
-  const className = "Button";
-  console.log('className', className);
+  const className = classNames(
+    styles.Button,
+    styles.pressable,
+    styles[variationName("variant", variant)],
+    styles[variationName("size", size)],
+    styles[variationName("textAlign", textAlign)],
+    fullWidth && styles.fullWidth,
+    disclosure && styles.disclosure,
+    icon && children && styles.iconWithText,
+    icon && children == null && styles.iconOnly,
+    isDisabled && styles.disabled,
+    loading && styles.loading,
+    pressed && !disabled && !url && styles.pressed,
+    tone && styles[variationName("tone", tone)]
+  );
 
   const iconMarkup = icon ? (
     <span className={loading ? styles.hidden : styles.Icon}>
